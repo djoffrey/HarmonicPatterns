@@ -49,8 +49,8 @@
 
 ####  Visualize
 
-+ Draw Harmonic Patterns in the graph using ipympl
-+ 使用ipympl绘图
++ Draw Harmonic Patterns in the graph using mplfinance + ipympl
++ 使用mplfinance + ipympl绘图
 
 ####  Notify
 
