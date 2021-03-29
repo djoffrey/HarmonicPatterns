@@ -1,5 +1,20 @@
 ### Harmonic Pattern Detector
 
+##### support patterns 
+
+![reference](https://harmonicpattern.com/blog/harmonic-pattern-and-elliot-wave-theory-advanced-technique/)
+
++ ABCD
++ Gartley
++ Bat
++ AltBat
++ ButterFly
++ Crab
++ DeepCrab
++ Shark
++ Cypper
+
++ all supports predict and deepsearch
 
 ##### patterns found
 
