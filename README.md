@@ -2,7 +2,7 @@
 
 ##### support patterns 
 
-![reference](https://harmonicpattern.com/blog/harmonic-pattern-and-elliot-wave-theory-advanced-technique/)
+[Harmonic Trading reference](https://harmonicpattern.com/blog/harmonic-pattern-and-elliot-wave-theory-advanced-technique/)
 
 + ABCD
 + Gartley
