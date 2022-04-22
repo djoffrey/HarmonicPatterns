@@ -8,9 +8,6 @@ tqdm
 
 ccxt
 
-# third modules
-# -e "./thirdparty/freqtrade"
-#-e "./thirdparty/cryptofeed"
 
 nest-asyncio
 mplfinance

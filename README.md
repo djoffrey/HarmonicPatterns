@@ -1,5 +1,9 @@
 ### Harmonic Pattern Detector
 
+```
+In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
+```
+
 ##### support patterns 
 
 [Harmonic Trading reference](https://harmonicpattern.com/blog/harmonic-pattern-and-elliot-wave-theory-advanced-technique/)
@@ -55,13 +59,10 @@
 ####  Notify
 
 + Send alerts to Wechat when Harmonic are newly found
-+ 如果最新行情形成了谐波模式，发送消息到微信
 
 ####  Predict
 
 + Predict harmonic patterns according to current kline
-+ 根据当前的K线行情，预测会形成谐波模式的价格点位
-
 
 #### Else:
 

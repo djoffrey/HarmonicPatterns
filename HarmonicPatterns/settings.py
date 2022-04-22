@@ -12,5 +12,5 @@ PREDICT=False
 
 # HTTP_PROXY = 'http://127.0.0.1:1087'
 HTTP_PROXY = None
-NOTIFY_URL = 'https://sc.ftqq.com/[自己去申请]'
+NOTIFY_URL = 'https://sc.ftqq.com/[****]'
 
