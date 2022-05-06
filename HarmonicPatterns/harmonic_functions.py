@@ -64,8 +64,8 @@ class HarmonicDetector(object):
 
         zigzag_pattern = []
         direction = 0
-        changed = False
         for idx in range(1, len(df)):
+            changed = False
             highest_high = ta.MAX(df.high[:idx], timeperiod=period)[-1]
             lowest_low = ta.MIN(df.low[:idx], timeperiod=period)[-1]
 
