@@ -212,7 +212,6 @@ class HarmonicDetector(object):
                 return None
 
     def detect_gartley(self, current_pat: list, predict: bool=False, predict_mode:str='direct'):
-        # (TODO: 预测分为两种，一种是顺势预测，一种是反趋势预测，都需要实现)
         # current_pat: [['H', new_high, idx],...]
         # Legs
         if not predict:
