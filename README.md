@@ -35,7 +35,7 @@ In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
 
 <details>
 
-  <summary> <b>安装Setup</b>   </summary>
+  <summary> <b>Setup</b>   </summary>
   <p>
   
   
@@ -54,7 +54,6 @@ In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
 ####  Visualize
 
 + Draw Harmonic Patterns in the graph using mplfinance + ipympl
-+ 使用mplfinance + ipympl绘图
 
 ####  Notify
 
