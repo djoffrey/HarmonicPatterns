@@ -4,7 +4,7 @@
 In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
 ```
 
-##### support patterns 
+### Search these patterns in ZIG-ZAG(parameters are configurable) patterns:
 
 [Harmonic Trading reference](https://harmonicpattern.com/blog/harmonic-pattern-and-elliot-wave-theory-advanced-technique/)
 
@@ -20,13 +20,17 @@ In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
 
 + all supports predict and deepsearch
 
-##### patterns found
+### patterns found
+
 
 ![plot_0](res/plot_0.png)
 
-##### patterns predict
+
+
+### patterns predict
 
 ![predict_0](res/predict_0.png)
+
 
 
 #### Reqirements
