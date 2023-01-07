@@ -55,9 +55,6 @@ In short, this project filters ZIGZAG patterns that fit-in Harmonic Patterns.
 
 + Draw Harmonic Patterns in the graph using mplfinance + ipympl
 
-####  Notify
-
-+ Send alerts to Wechat when Harmonic are newly found
 
 ####  Predict
 

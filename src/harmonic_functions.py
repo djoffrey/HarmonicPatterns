@@ -1490,3 +1490,7 @@ class HarmonicDetector(object):
 
         return all_patterns, all_predict_patterns
 
+
+if __name__ == '__main__':
+    detector = HarmonicDetector()
+    print('done')
