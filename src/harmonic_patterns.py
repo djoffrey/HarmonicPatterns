@@ -66,12 +66,12 @@ class HarmonicDetector(object):
         direction = 0
         changed = False
         for idx in range(1, len(df)):
-            highest_high = ta.MAX(df.high[:idx], timeperiod=period)[-1]
-            lowest_low = ta.MIN(df.low[:idx], timeperiod=period)[-1]
+            highest_high = ta.MAX(df.high.iloc[:idx], timeperiod=period)[-1]
+            lowest_low = ta.MIN(df.low.iloc[:idx], timeperiod=period)[-1]
 
 
-            new_high = df.high[idx] >= highest_high
-            new_low = df.low[idx] <= lowest_low
+            new_high = df.high.iloc[idx] >= highest_high
+            new_low = df.low.iloc[idx] <= lowest_low
 
             if new_high and not new_low:
                 if direction != 1:
@@ -89,17 +89,17 @@ class HarmonicDetector(object):
             if new_high or new_low:
                 if changed or len(zigzag_pattern)==0:
                     if direction == 1:
-                        pat = ['H', df.high[idx], idx]
+                        pat = ['H', df.high.iloc[idx], idx]
                         zigzag_pattern.append(pat)
                     elif direction == -1:
-                        pat = ['L', df.low[idx], idx]
+                        pat = ['L', df.low.iloc[idx], idx]
                         zigzag_pattern.append(pat)
                 else:
-                    if direction == 1 and df.high[idx] > zigzag_pattern[-1][1]:
-                        pat = ['H', df.high[idx], idx]
+                    if direction == 1 and df.high.iloc[idx] > zigzag_pattern[-1][1]:
+                        pat = ['H', df.high.iloc[idx], idx]
                         zigzag_pattern[-1] = pat
-                    elif direction == -1 and df.low[idx] < zigzag_pattern[-1][1]:
-                        pat = ['L', df.low[idx], idx]
+                    elif direction == -1 and df.low.iloc[idx] < zigzag_pattern[-1][1]:
+                        pat = ['L', df.low.iloc[idx], idx]
                         zigzag_pattern[-1] = pat
                     else:
                         pass
@@ -1412,7 +1412,7 @@ class HarmonicDetector(object):
 
         mc = mpf.make_marketcolors(base_mpf_style='yahoo')
         # Create a style based on `seaborn` using those market colors:
-        style  = mpf.make_mpf_style(base_mpl_style='seaborn', marketcolors=mc)
+        style  = mpf.make_mpf_style(base_mpl_style='seaborn-v0_8', marketcolors=mc)
 
         if len(patterns_line) > 0:
             if save_fig and file_name is not None:

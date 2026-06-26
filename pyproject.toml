@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harmonicpatterns"
+version = "0.0.1"
+description = "A Python Library for Harmonic Trading"
+readme = "README.md"
+authors = [
+    { name = "djoffrey", email = "joffrey.oh@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.14.2",
+    "pandas>=0.22.0",
+    "ipython",
+    "ccxt",
+    "jupyter",
+    "matplotlib",
+    "mplfinance",
+    "ipympl",
+    "TA-Lib",
+    "fire",
+    "redis",
+    "httpx",
+    "nest-asyncio",
+    "cryptography<49",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["harmonic_functions", "harmonic_patterns", "settings"]

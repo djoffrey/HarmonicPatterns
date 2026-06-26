@@ -124,3 +124,6 @@ ENV/
 .DS_Store?
 .Spotlight-V100
 .Trashes
+
+# Generated data and charts
+data/

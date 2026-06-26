@@ -35,12 +35,12 @@ import httpx
 
 logger = Logger('Harmonic')
 
-from .harmonic_functions import HarmonicDetector
+from harmonic_functions import HarmonicDetector
 
 
-from .settings import NOTIFY_URL
-from .settings import MAIN_SYMBOLS, ALT_SYMBOLS, PERIODS, ERROR_RATE
-from .settings import PROCESS_COUNT
+from settings import NOTIFY_URL
+from settings import MAIN_SYMBOLS, ALT_SYMBOLS, PERIODS, ERROR_RATE, PREDICT
+from settings import PROCESS_COUNT
 
 
 import redis
@@ -121,9 +121,9 @@ def main():
 
     ccxt_options = {'proxies': PROXIES}
 
-    ok = 'okex'
+    ok = 'okx'
     bn = 'binance'
-    hb = 'huobipro'
+    hb = 'htx'
 
     notify_msgs = []
     while True:
@@ -143,7 +143,7 @@ def main():
                 # 检测主流币和山寨是否出现谐波模式
                 r  = p.map_async(partial(search, client,  periods=PERIODS,  predict=PREDICT, only_last=True, alert=True, plot=False), [[si] for si in symbols])
                 # 检测平台币
-                r1 = p.map_async(partial(search,  hb, periods=PERIODS,  predict=PREDICT, only_last=True, alert=True, plot=False), [['HT/USDT']])
+                r1 = p.map_async(partial(search,  hb, periods=PERIODS,  predict=PREDICT, only_last=True, alert=True, plot=False), [['HTX/USDT']])
                 r2 = p.map_async(partial(search, ok, periods=PERIODS,  predict=PREDICT, only_last=True, alert=True, plot=False), [['OKB/USDT']])
                 r3 = p.map_async(partial(search, bn, periods=PERIODS,  predict=PREDICT, only_last=True, alert=True, plot=False), [['BNB/USDT']])
                 r.get(timeout=360)
